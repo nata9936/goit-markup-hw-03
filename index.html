@@ -6,40 +6,37 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <main>
       <header>
-        <nav class="nav-site">
+       <div class="container main-nav">
+         
           <a href="">
-            <span class="logo-web">Web</span>
-            <span class="logo-studio">Studio</span>
+             <span class="logo-web">Web</span>
+             <span class="logo-studio">Studio</span>
           </a>
-          <ul class="list">
-            <li><a class="paragraph" href="">Студия</a></li>
-            <li><a class="paragraph" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="paragraph" href="">Контакты</a></li>
+           <ul class="list site-nav-item">
+             <li class="site-nav-item"><a class="site-nav-item paragraph" href="">Студия</a></li>
+             <li class="site-nav-item"><a class="site-nav-item paragraph" href="./portfolio.html">Портфолио</a></li>
+             <li class="site-nav-item"><a class="site-nav-item paragraph" href="">Контакты</a></li>
           </ul>
-        </nav>
-
-        <!--Contacts-->
-        <div>
-          <a class="paragraph" href="mailto:info@devstudio.com"
-            ><img
-              src="./img/envelope(hover).png"
-              alt="иконка почты"
-            />info@devstudio.com</a
-          >
-          <a class="paragraph" href="tel:+380961111111"
-            ><img src="./img/Vector.png" alt="иконка телефона" /> +38 096 111 11
-            11</a
-          >
+         
+         <div class="list nav">
+          <a class="paragraph" href="mailto:info@devstudio.com">
+             <img src="./img/envelope(hover).png" alt="иконка почты"/>info@devstudio.com
+          </a>
+          <a class="paragraph" href="tel:+380961111111"><img src="./img/Vector.png" alt="иконка телефона" /> 
+             +38 096 111 11 11
+          </a>
+         </div>
         </div>
-      </header>
+     </header>
       <!--Services-->
-      <section>
+      <section class="section hero">
         <h1 class="main-title">Эффективные решения<br>для вашего бизнеса</h1>
         <button class="frame-button">
           <a class="button" href="">Заказать услугу</a>
@@ -47,9 +44,10 @@
       </section>
       <!--Our advantages-->
       <section>
-        <h2 class="submain-title">Our advantages</h2>
-        <ul class="list">
-          <li>
+        <h2 class="hidden">Our advantages</h2>
+        <div class="container" >
+        <ul class="list advantages">
+          <li class="item">
             <a href=""><img src="./img/Vector1.png" alt="спутник" /></a>
             <h3 class="title">Внимание к деталям</h3>
             <p class="subtitle">
@@ -57,7 +55,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/Vector2.png" alt="часы" /></a>
             <h3 class="title">Пунктуальность</h3>
             <p class="subtitle">
@@ -65,7 +63,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/Vector3.png" alt="TV" /></a>
             <h3 class="title">Планирование</h3>
             <p class="subtitle">
@@ -73,7 +71,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/Vector4.png" alt="человечек" /></a>
             <h3 class="title">Современные технологии</h3>
             <p class="subtitle">
@@ -82,144 +80,152 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--What are you doing-->
-      <section>
-        <h2 class="submain-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+      <section class="section">
+        <div class="container">
+        <h2 class="submain-title doing">Чем мы занимаемся</h2>
+        <ul class="list work">
+          <li class="item">
             <img src="./img/img.svg" alt="ноут" /><a class="name-work" href=""
               >Десктопные приложения</a
             >
           </li>
-          <li>
+          <li class="item">
             <img src="./img/box.svg" alt="телефон" /><a
               class="name-work"
               href=""
               >Мобильные приложения</a
             >
           </li>
-          <li>
+          <li class="item">
             <img src="./img/img1.svg" alt="комп" /><a class="name-work" href=""
               >Дизайнерские решения</a
             >
           </li>
         </ul>
+        </div>
       </section>
       <!--Our team-->
-      <section>
-        <h2 class="submain-title">Наша команда</h2>
-        <ul class="list">
-          <li>
+      <section class="section color"> 
+        <div class="container">
+        <h2 class="submain-title team">Наша команда</h2>
+        <ul class="list worker">
+          <li class="item">
             <img src="./img/img2.svg" alt="Джон Смит" />
             <h3 class="title">John Smith</h3>
             <p class="subtitle">Product Designer</p>
-            <ul class="list">
-              <li>
+            <ul class="list icon">
+              <li class="item">
                 <a href=""> <img src="./img/instag.svg" alt="instagram" /></a>
               </li>
-              <li>
+              <li class="item">
                 <a href=""><img src="./img/messeg.svg" alt="twitter" /></a>
               </li>
-              <li><a href="">
+              <li class="item"><a href="">
                 <img src="./img/facebook.svg" alt="facebook" />
-              </li></a>
+              </li class="item"></a>
               <li><a href=""><img src="./img/in.svg" alt="in" /></a></li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/img3.svg" alt="Марта Стеварт" />
             <h3 class="title">Marta Stewart</h3>
             <p class="subtitle">Frontend Developer</p>
-            <ul class="list">
-              <li>
+            <ul class="list icon">
+              <li class="item">
                 <a href=""> <img src="./img/instag.svg" alt="instagram" /></a>
               </li>
-              <li>
+              <li class="item">
                 <a href=""><img src="./img/messeg.svg" alt="twitter" /></a>
               </li>
-              <li><a href="">
+              <li class="item"><a href="">
                   <img src="./img/facebook.svg" alt="facebook" />
-              </li></a>
+              </li class="item"></a>
               <li><a href=""><img src="./img/in.svg" alt="in" /></a></li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/img4.svg" alt="Роберт Джекис" />
             <h3 class="title">Robert Jakis</h3>
             <p class="subtitle">Marketing</p>
-            <ul class="list">
-              <li>
+            <ul class="list icon">
+              <li class="item">
                 <a href=""> <img src="./img/instag.svg" alt="instagram" /></a>
               </li>
-              <li>
+              <li class="item">
                 <a href=""><img src="./img/messeg.svg" alt="twitter" /></a>
               </li>
-              <li><a href="">
+              <li class="item"><a href="">
                   <img src="./img/facebook.svg" alt="facebook" />
-              </li></a>
+              </li class="item"></a>
               <li><a href=""><img src="./img/in.svg" alt="in" /></a></li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/img5.svg" alt="Мартин До" />
             <h3 class="title">Martin Doe</h3>
             <p class="subtitle">UI Designer</p>
-            <ul class="list">
-              <li>
+            <ul class="list icon">
+              <li class="item">
                 <a href=""> <img src="./img/instag.svg" alt="instagram" /></a>
               </li>
-              <li>
+              <li class="item">
                 <a href=""><img src="./img/messeg.svg" alt="twitter" /></a>
               </li>
-              <li><a href="">
+              <li class="item"><a href="">
                   <img src="./img/facebook.svg" alt="facebook" />
               </li></a>
-              <li><a href=""><img src="./img/in.svg" alt="in" /></a></li>
+              <li class="item"><a href=""><img src="./img/in.svg" alt="in" /></a></li>
             </ul>
           </li>
         </ul>
+        </div>
       </section>
       <!--Regular customers-->
-      <section>
-        <h2 class="submain-title">Постоянные клиенты</h2>
-        <ul class="list"> 
-          <li>
+      <section class="section">
+       <div class="container">
+
+        
+       <h2 class="submain-title customer">Постоянные клиенты</h2>
+        <ul class="list klient"> 
+          <li class="item">
             <a href=""
               ><img src="./img/Rectangle9.svg" alt="рамка" /><img
                 src="./img/logo1.svg"
                 alt="логотип"
             /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""
               ><img src="./img/Rectangle9.svg" alt="рамка" /><img
                 src="./img/logо2.svg"
                 alt="логотип"
             /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""
               ><img src="./img/Rectangle9.svg" alt="рамка" /><img
                 src="./img/logo3.svg"
                 alt="логотип"
             /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""
               ><img src="./img/Rectangle9.svg" alt="рамка" /><img
                 src="./img/logo4.svg"
                 alt="логотип"
             /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""
               ><img src="./img/Rectangle9.svg" alt="рамка" /><img
                 src="./img/logo5.svg"
                 alt="логотип"
             /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""
               ><img src="./img/Rectangle9.svg" alt="рамка" /><img
                 src="./img/logo6.svg"
@@ -227,44 +233,49 @@
             /></a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--Footer-->
-    <footer>
-      <div>
-        <p><a href="">
+    <footer class="page-footer">
+      <div class="container footer">
+       <div>
+       <p>
+          <a href="">
           <span class="logo-web">Web</span>
-          <span class="title-logo-white">Studio</span>
-        </a></p>
-        <ul class="list">
+          <span class="title-logo-white">Studio</span></a>
+        </p>
+        <ul class="list contact">
           <li><p class="adress">г. Киев, пр-т Леси Украинки, 26</p></li>
           <li><p class="unique">info@example.com</p></li>
           <li><p class="unique"> +38 099 111 11 11</p></li>
         </ul>
-      </div>
+       </div>
+       
 
-      <div>
+       <div class="join-in">
         <p class="title-white">Присоединяйтесь</p>
-        <ul class="list">
-          <li>
+        
+        <ul class="list list-join">
+          <li class="item">
             <a href=""><img src="./img/instag.svg" alt="instagram" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/messeg.svg" alt="twitter" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/facebook.svg" alt="facebook" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/in.svg" alt="in" /></a>
           </li>
         </ul>
-      </div>
+       </div>
 
-      <div>
+       <div class="mail">
         <p class="title-white">Подпишитесь на рассылку</p>
-        <ul class="list">
+        <ul class="list list-mail">
           <li>
             <p class="unique">E-mail</p>
           </li>
@@ -272,11 +283,19 @@
             <button class="frame-button"><a class="button" href="">Подписаться</a></button>
           </li>
         </ul>
+       </div>
       </div>
-
-      <div>
-        <p class="unique">2020 | Developed by GoIT Students</p>
-      </div>
+      
+      <p>2020 | Developed by GoIT Students</p>
+      
+      
     </footer>
   </body>
+
+
+  
+
+
+
+  </footer>
 </html>

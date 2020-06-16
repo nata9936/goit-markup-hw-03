@@ -5,6 +5,16 @@
 /* цвет текста героя и кнопок #FFFFFF */
 /* неповторимый цвет rgba(255, 255, 255, 0.6); */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #2196f3;
   --title-text-color: #212121;
@@ -24,6 +34,68 @@ body {
 
 .list {
   list-style: none;
+}
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.list.site-nav-item {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 85px;
+  padding-left: 0px;
+}
+
+.list.nav {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 305px;
+  padding-left: 0px;
+}
+
+.site-nav-item.paragraph {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0px;
+}
+
+.list .title {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.list .subtitle {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.list.icon {
+  margin-top: 16px;
+  margin-bottom: 0px;
+
+  display: flex;
+  padding-left: 0px;
+  padding-bottom: 94px;
+}
+
+.list.icon .item {
+  margin-right: 10px;
+}
+
+.list.klient {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+.list.klient .item {
+  margin-right: 30px;
 }
 
 .logo-web {
@@ -47,6 +119,13 @@ body {
 
 .paragraph {
   color: var(--title-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.paragraph:not(:last-child) {
+  margin-right: 30px;
 }
 
 .paragraph:hover,
@@ -54,8 +133,15 @@ body {
   color: var(--primary-text-color);
 }
 
+.section.hero {
+  text-align: center;
+}
+
 .main-title {
-  color: var(--accent-color);
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: 000000;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -69,13 +155,12 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .frame-button {
   background: #2196f3;
+  border-radius: 4px;
 }
 
 .title {
@@ -103,7 +188,31 @@ body {
   text-align: center;
   letter-spacing: 1.17;
 }
+.submain-title.doing {
+  margin-top: 115px;
+  margin-bottom: 0px;
+}
 
+.submain-title.team {
+  margin-top: 95px;
+  margin-bottom: 0px;
+  padding-top: 94px;
+}
+
+.submain-title.customer {
+  margin-top: 94px;
+  margin-bottom: 0px;
+}
+
+.section.color {
+  background-color: #f5f4fa;
+}
+
+.hidden {
+  visibility: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .name-work {
   color: var(--accent-color);
   font-weight: 700;
@@ -123,12 +232,37 @@ body {
   text-transform: uppercase;
 }
 
+.join-in {
+  padding-top: 10px;
+  padding-right: 94px;
+}
+
+.list.list-join {
+  display: flex;
+}
+
+.list.list-join .item {
+  margin-right: 10px;
+}
+
+.mail {
+  padding-right: 215px;
+  padding-top: 10px;
+}
+
+.list-mail {
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .unique {
   color: var(--unique-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 1.71;
+  background-color: #2f303a;
 }
 
 .nav-site {
@@ -136,6 +270,56 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1.14;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+
+  width: 1240px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+}
+
+.list.contact {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 8px;
+  margin-bottom: 88px;
+}
+
+.list.advantages .item {
+  margin-right: 30px;
+}
+
+.list.work {
+  display: flex;
+  justify-content: center;
+}
+
+.list.work .item {
+  margin-right: 30px;
+}
+
+.list.worker {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.list.worker .item {
+  margin-right: 30px;
 }
 
 .title-logo-white {
@@ -153,6 +337,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 1.71;
+  padding-right: 214px;
 }
 
 .button-port {
@@ -177,4 +362,21 @@ body {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 1.56;
+}
+
+.container.footer {
+  display: flex;
+
+  margin-top: 94px;
+  margin-bottom: 0px;
+  padding-top: 45px;
+}
+
+.page-footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  padding-top: 45px;
+  padding-bottom: 0px;
 }
