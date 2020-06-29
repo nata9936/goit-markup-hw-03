@@ -80,11 +80,18 @@ body {
 
   display: flex;
   padding-left: 0px;
-  padding-bottom: 94px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
-.list.worker .item {
+.worker.item {
   margin-right: 30px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  border-radius: 4px;
+  text-align: center;
 }
 
 .list.icon .item {
@@ -322,7 +329,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -351,24 +358,32 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .advantages {
   display: flex;
   justify-content: center;
+  padding-left: 0px;
 }
 
 .list.contact {
+  display: block;
+
   margin-left: 0px;
   padding-left: 0px;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 
 .list.advantages .item {
+  flex-basis: 270px;
   margin-right: 30px;
+}
+
+.list.advantages .item :last-of-type {
+  margin-right: 0px;
 }
 
 .list.work {
@@ -440,6 +455,8 @@ body {
   margin-top: 94px;
   margin-bottom: 0px;
   padding-top: 45px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .page-footer {
@@ -450,6 +467,11 @@ body {
   margin-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.studio {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .icon-img {
